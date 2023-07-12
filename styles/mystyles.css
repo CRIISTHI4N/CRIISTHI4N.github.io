@@ -107,7 +107,7 @@ nav {
 
 .article__experiencia > span {
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: 50%;
     transform: translateX(50%);
     text-shadow: 1px 1px 1px black;
@@ -116,7 +116,7 @@ nav {
 
 .article__experiencia > button {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 50%;
     transform: translateX(50%);
 }
