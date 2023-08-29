@@ -15,10 +15,11 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- preload de imagenes -->
+    <!-- pre-load de imagenes -->
     <link rel="preload" href="./img/autorenting.jpg" as="image">
     <link rel="preload" href="./img/brigada.jpg" as="image">
     <link rel="preload" href="./img/itquentame.jpeg" as="image">
+    <link rel="preload" href="./img/sistema-facturacion.jpg" as="image">
     <link rel="preload" href="./img/velix.jpg" as="image">
 </head>
 
@@ -55,11 +56,11 @@
             <span class="text-white d-block text-center fw-bold fs-5">&lt;/&gt;</span>
 
             <div class="section__links pt-4 w-100 d-flex justify-content-center">
-                <a class="me-3 text-decoration-none text-white fs-1" href="https://github.com/CRIISTHI4N"
+                <a class="section__link me-3 text-decoration-none text-white fs-1" href="https://github.com/CRIISTHI4N"
                     target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github icon_social"></i>
                 </a>
-                <a class="text-decoration-none text-white fs-1"
+                <a class="section__link text-decoration-none text-white fs-1"
                     href="https://www.linkedin.com/in/cristhian-velez-8250a6224/" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin icon_social"></i>
@@ -151,6 +152,20 @@
             </div>
 
             <div class="row row-cols-md-2 row-cols-xl-3">
+
+                <div class="col-md p-2">
+                    <article class="article__experiencia">
+                        <div class="imagen_referencia">
+                            <img class="w-100 rounded-2" src="img/sistema-facturacion.jpg" alt="velix">
+                        </div>
+
+                        <span class="m-0 fw-bold">Sistema de Facturación</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#factura"
+                            class="btn btn-warning">Ver
+                            más</button>
+                    </article>
+                </div>
+
                 <div class="col-md p-2">
                     <article class="article__experiencia">
                         <div class="imagen_referencia">
@@ -478,7 +493,7 @@
                     <br>
                     <span class="d-block fw-bold">Tecnologías utilizadas:</span>
                     <ul>
-                        <li>MongoDB - Mongose</li>
+                        <li>MongoDB - Mongoose</li>
                         <li>Express</li>
                         <li>Next.Js</li>
                         <li>Node.Js</li>
@@ -494,7 +509,115 @@
                         <li>Registro de usuarios</li>
                         <li>Posteo de imágenes por cada usuario</li>
                         <li>Visualización de todos los post de todos los usuarios</li>
-                        <li>Finalización de sesión</li>
+                    </ul>
+                </div>
+                <div class="modal-footer modal__footer--bg">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA FACTURACIÓN -->
+    <div class="modal fade" id="factura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal__content--border">
+                <div class="modal-header modal__header--bg text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sistema de Facturación</h1>
+                </div>
+                <div class="modal-body modal__body--bg">
+                    <h6 class="d-block fw-bold">Funcionalidad:</h6>
+                    <br>
+
+                    <p>Este sistema tiene la intencion de generar facturas electrónicas, asi como gestionar las
+                        diferentes partes de tu negocio, como lo son: r facturas, clientes, proveedores, categorías,
+                        estadísticas de ventas, etc.</p>
+
+                    <div class="custom__carousel rounded-4">
+                        <div id="carouselFactura" class="carousel slide carousel-fade w-100 h-100">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="./img/sf1.jpg" class="d-block h-100 m-auto" alt="interfaz de log in">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf2.jpeg" class="d-block h-100 m-auto " alt="interfaz de registro">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf3.jpeg" class="d-block h-100 m-auto" alt="interfaz de inicio">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf4.jpeg" class="d-block h-100 m-auto" alt="barra de anvegación">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf5.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de selección dde vehiculo">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf6.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de selección dde vehiculo">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf7.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de selección dde vehiculo">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/sf8.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de selección dde vehiculo">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFactura"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFactura"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p>Muy Pronto un video</p>
+                    <!-- <video class="w-100 mt-4 rounded-4" src="files/velix.mp4" controls></video> -->
+
+                    <a class="btn btn-warning my-3" href="https://github.com/CRIISTHI4N/sistema-facturacion-front-end"
+                        target="_blank" rel='noopener noreferrer'>
+                        Visitar repositorio Front-End
+                    </a>
+
+                    <a class="btn btn-warning my-3" href="https://github.com/CRIISTHI4N/sistema-facturacion-back-end"
+                        target="_blank" rel='noopener noreferrer'>
+                        Visitar repositorio Back-End
+                    </a>
+
+                    <br>
+                    <span class="d-block fw-bold">Tecnologías utilizadas:</span>
+                    <ul>
+                        <li>MongoDB - Mongoose</li>
+                        <li>Express</li>
+                        <li>Next.Js</li>
+                        <li>Node.Js</li>
+                        <li>Tailwind</li>
+                        <li>useSWR</li>
+                    </ul>
+
+                    <br>
+                    <span class="d-block fw-bold">Tareas realizadas:</span>
+                    <br>
+                    <ul>
+                        <li>Validación y control de datos</li>
+                        <li>Actualización de datos en tiempo real</li>
+                        <li>Log In</li>
+                        <li>Protección de rutas, cors, token de seguridad, middlewares</li>
+                        <li>Gestión de facturas, clientes, proveedores,
+                            categorías, stock, etc.
+                        </li>
+                        <li>Estadisticas de ventas por mes y día</li>
+                        <li>Web Responsiva</li>
                     </ul>
                 </div>
                 <div class="modal-footer modal__footer--bg">
