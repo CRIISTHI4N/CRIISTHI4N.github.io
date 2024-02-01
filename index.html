@@ -156,6 +156,18 @@
                 <div class="col-md p-2">
                     <article class="article__experiencia">
                         <div class="imagen_referencia">
+                            <img class="w-100 rounded-2" src="img/fev-store.jpg" alt="eCommerce fevs store">
+                        </div>
+
+                        <span class="m-0 fw-bold">eCommerce Fevs-Store</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#fevsstore"
+                            class="btn btn-warning">Ver más</button>
+                    </article>
+                </div>
+
+                <div class="col-md p-2">
+                    <article class="article__experiencia">
+                        <div class="imagen_referencia">
                             <img class="w-100 rounded-2" src="img/sistema-facturacion.jpg" alt="velix">
                         </div>
 
@@ -201,6 +213,7 @@
                             class="btn btn-warning">Ver más</button>
                     </article>
                 </div>
+
             </div>
         </div>
     </section>
@@ -620,6 +633,87 @@
                         </li>
                         <li>Estadisticas de ventas por mes y día</li>
                         <li>Web Responsiva</li>
+                    </ul>
+                </div>
+                <div class="modal-footer modal__footer--bg">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- eCommerce - Fevs Store -->
+    <div class="modal fade" id="fevsstore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal__content--border">
+                <div class="modal-header modal__header--bg text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">eCommerce Fevs-Store</h1>
+                </div>
+                <div class="modal-body modal__body--bg">
+                    <h6 class="d-block fw-bold">Funcionalidad:</h6>
+                    <br>
+
+                    <p>eCommerce básico que permite agregar productos a una tienda virutal, calcuando el total a pagar.
+                        Al querer comprar alguna prenda el usuario sera redireccionado al whatsApp del comerciante, con
+                        un mensaje personalizado en el cual nos dirá las prendas que desea adquirir junto con su total a
+                        pagar</p>
+
+                    <div class="custom__carousel rounded-4">
+                        <div id="carouselFevsStore" class="carousel slide carousel-fade w-100 h-100">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="./img/fs1.jpeg" class="d-block h-100 m-auto" alt="interfaz de log in">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/fs2.jpeg" class="d-block h-100 m-auto " alt="interfaz de registro">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/fs3.jpeg" class="d-block h-100 m-auto" alt="interfaz de inicio">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/fs4.jpeg" class="d-block h-100 m-auto" alt="barra de anvegación">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/fs5.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de selección dde vehiculo">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFevsStore"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFevsStore"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-info my-3" href="https://fevs-store.vercel.app/" target="_blank"
+                        rel='noopener noreferrer'>
+                        Ver Demostración
+                    </a>
+
+                    <br>
+                    <span class="d-block fw-bold">Tecnologías utilizadas:</span>
+                    <ul>
+                        <li>Next.Js</li>
+                        <li>Tailwind</li>
+                    </ul>
+
+                    <br>
+                    <span class="d-block fw-bold">Tareas realizadas:</span>
+                    <br>
+                    <ul>
+                        <li>Carrito de compras</li>
+                        <li>Calculo automático de total a pagar</li>
+                        <li>Mensaje personalizado de Whatsapp</li>
+                        <li>Responsive</li>
                     </ul>
                 </div>
                 <div class="modal-footer modal__footer--bg">
