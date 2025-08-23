@@ -97,6 +97,12 @@ nav {
     background: var(--sectionGradient);
 }
 
+.section__politicas {
+    height: calc(100vh - 55px);
+    margin-top: 55px;
+    background: var(--bgBody);
+}
+
 .section .section__flex {
     height: 100%;
 }
